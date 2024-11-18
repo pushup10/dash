@@ -1,0 +1,25 @@
+this is step by step process for ghost gaame
+Ghost game :
+1. Urp
+2. Import ar foundation from project manager
+3. ⁠build settings-> player settings-> quality-> balanced for android -> click onrender pipeline asset 
+4. ⁠ur balance data -> add render feature-> screen space and ar back go rendering feature 
+5. ⁠player setting-> player -> disable auto graphics api and remove vulgen and select minimum api level and change scripting background to IL2cpp
+6. ⁠add scene in build settings
+7. ⁠Crete xr origin mobile ar -> tracking origin mode change to device 
+8. ⁠right click xr-> ar session 
+9. ⁠drag and drop ghost and remove two extra component -> overwrite apply all and set in front of camera 
+10. ⁠asset store joystick green white import 
+11. ⁠create canvas -> constant pixel size change to scale with screen size 
+12. ⁠joystick prefab -> fixed joystick drag and drop to canvas as a child and reset the stick 
+13. ⁠inspector of stick change position using shift alt bottom 
+14. ⁠create a script for controller  and get public fixed joystick and in update float x= joystick.horizontal and floaty and vector 3 movement new vector 
+15. ⁠add Rigidbody to ghost and remove use gravity
+16. ⁠drag and drop script to ghost and get reference of joystick by dragging and speed 2
+17. ⁠create sphere and reset duplicate and place 
+18. ⁠add sphere collider in ghost  click on edit collider and drag a circle on ghost
+19. ⁠create tag for sphere add tag click on plus enter as coin
+20. ⁠select all sphere and change untagged to coin
+21. ⁠add text in canvas and change position by shift alt to the top right corner 
+22. ⁠add text reference in ghost by drag and drop 
+23. ⁠in ghost rigidbody we select freeze rotation and increase size
