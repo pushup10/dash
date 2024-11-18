@@ -1,0 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using TMPro;
+
+public class GameController : MonoBehaviour
+{
+    private Rigidbody rb;
+    public FixedJoystick joystick;
+    public float Speed;
+    public TMP_Text stext;
+    public int Total;
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        Total = 0;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        float x = joystick.Horizontal;
+        float y = joystick.Vertical;    
+        Vector3 Movement = new Vector3 (x, 0f, y);
+
+        rb.velocity = Movement * Speed;
+        if (rb.velocity != Vector3.zero)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(x,y) * Mathf.Rad2Deg, transform.eulerAngles.z);
+
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "coin")
+        {
+            Destroy(collision.gameObject);
+            Total += 1;
+            stext.text = ("Food Eaten"+Total);
+        }
+    }
+
+
+}
