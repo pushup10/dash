@@ -1,0 +1,19 @@
+Markerbased ar solarsystem
+1. Create a 3d project
+2. ⁠drag and drop vuforia packet and import it 
+3. ⁠right click on hierarchy-> vuforia engine-> image target 
+4. ⁠delete main camera and right click on hierarchy-> vuforia -> ar camera
+5. ⁠ar camera inspector -> scroll down click on open vuforia engine configuration 
+6. ⁠there it ask for app license key , enter your license key
+7.Import image target and planet package 
+8. ⁠change all the images into sprite 2d  
+9. in inspector of image target, now drag and drop a image to it 
+10. ⁠now we have place the prefab of that image on top it and resize it
+11. ⁠move the prefab inside the image target
+12. ⁠ar camera should be on top of image target 
+13. ⁠add a event in image target and drag and drop the prefab into the object of event and set function to game object set bool and tick the box 
+14. ⁠on event when target lost is same prefab with same function and don’t tick the box 
+15. ⁠define a rotation script 
+16. ⁠add that script to that prefab
+17. desgin ui 
+18. build 
