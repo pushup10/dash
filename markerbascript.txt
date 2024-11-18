@@ -1,0 +1,59 @@
+rotation
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    public Vector3 RotateMovement;
+    public float RotationSpeed;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        this.transform.Rotate(RotateMovement*RotationSpeed*Time.deltaTime);
+    }
+}
+
+
+
+menumanager
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MenuManager : MonoBehaviour
+{
+    public GameObject MenuPanel;
+    public GameObject LoadingPanel;
+
+    public void Awake()
+    {
+        MenuPanel.SetActive(true);
+        LoadingPanel.SetActive(false);
+    }
+
+    public void Close()
+    {
+        Application.Quit();
+    }
+
+    IEnumerator DelayScene()
+    {
+        MenuPanel.SetActive(false);
+        LoadingPanel.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(1);
+    }
+    public void ExploreARCall()
+    {
+        StartCoroutine(DelayScene());
+    }
+}
