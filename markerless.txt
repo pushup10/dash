@@ -1,0 +1,28 @@
+Markerless ar
+1. Create 3 d project 
+2. ⁠delete main camera
+3. ⁠project manager -> ar foundation 
+4. ⁠player-> remove auto graphics api and remove vulkan 
+5. ⁠xr-> xr origin and ar session origin
+6. ⁠drag and drop prefab into the hierarchy 
+7. ⁠position it correctly infront of camera 
+8. ⁠click on that prefab-> right click prefab -> unpack completely 
+9. ⁠separate the elements in that model
+10. ⁠create a canvas and change the render mode to world space ui 
+11. ⁠set position to 0 and size to 1 
+12. ⁠move the canvas on infront of model 
+13. ⁠assign main camera from xr origin to that event camera of canvas
+14. ⁠create a image inside the canvas and resize it 
+15. ⁠add text inside the image and resize the text to match the image 
+16. ⁠reduce the alpha channel of the image 
+17. ⁠rename into world canvas 
+18. ⁠drag and drop the canvas to the part of the model 
+19. ⁠create each one for other parts
+20. ⁠create a canvas on hierarchy and create buttons on the canvas 
+21. ⁠adjust those buttons and rename them
+22. ⁠create a panel and set position using shift alt 
+23. ⁠make those buttons a child of panel 
+24. ⁠check whether the values are 0 for the parts of model
+25. ⁠attach script to model
+26. ⁠add rhe  model to button and give the correct function 
+22.
