@@ -1,0 +1,46 @@
+BUTTON CONTROL
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Buttoncontrol : MonoBehaviour
+{
+    [Header("Model")]
+    public GameObject heart, teeth, digestive, muscle, circulation, ribcage;
+
+    // Function to toggle visibility of the heart
+    public void ToggleHeart()
+    {
+        heart.SetActive(!heart.activeSelf); // Toggle the heart's active state
+    }
+
+    // Function to toggle visibility of the teeth
+    public void ToggleTeeth()
+    {
+        teeth.SetActive(!teeth.activeSelf); // Toggle the teeth's active state
+    }
+
+    // Function to toggle visibility of the digestive system
+    public void ToggleDigestive()
+    {
+        digestive.SetActive(!digestive.activeSelf); // Toggle the digestive system's active state
+    }
+
+    // Function to toggle visibility of the muscle system
+    public void ToggleMuscle()
+    {
+        muscle.SetActive(!muscle.activeSelf); // Toggle the muscle system's active state
+    }
+
+    // Function to toggle visibility of the circulatory system
+    public void ToggleCirculation()
+    {
+        circulation.SetActive(!circulation.activeSelf); // Toggle the circulatory system's active state
+    }
+
+    // Function to toggle visibility of the ribcage
+    public void ToggleRibcage()
+    {
+        ribcage.SetActive(!ribcage.activeSelf); // Toggle the ribcage's active state
+    }
+}
