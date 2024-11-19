@@ -44,3 +44,21 @@ public class Buttoncontrol : MonoBehaviour
         ribcage.SetActive(!ribcage.activeSelf); // Toggle the ribcage's active state
     }
 }
+
+
+UI scene Control
+
+
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneLoader : MonoBehaviour
+{
+    // This function will be called when the button is clicked
+    public void LoadHumanScene()
+    {
+        // Load the "human" scene
+        SceneManager.LoadScene("human");
+    }
+}
+
