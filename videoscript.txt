@@ -1,0 +1,33 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Video;
+
+public class VideoController : MonoBehaviour
+{
+    public VideoPlayer videoPlayer; // Reference to the Video Player
+    public Button playButton;      // Reference to the Play Button
+    public Button pauseButton;     // Reference to the Pause Button
+
+    void Start()
+    {
+        // Assign button listeners
+        playButton.onClick.AddListener(PlayVideo);
+        pauseButton.onClick.AddListener(PauseVideo);
+    }
+
+    void PlayVideo()
+    {
+        if (videoPlayer != null)
+        {
+            videoPlayer.Play();
+        }
+    }
+
+    void PauseVideo()
+    {
+        if (videoPlayer != null)
+        {
+            videoPlayer.Pause();
+        }
+    }
+}
