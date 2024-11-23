@@ -1,0 +1,15 @@
+//Add the Video Player
+Add a Plane:
+
+Create a plane (or 3D object) as a child of the Image Target.
+This plane will act as the screen for the video.
+Add a Video Player Component:
+
+Select the plane and go to Inspector > Add Component > Video Player.
+In the Video Player component:
+Drag and drop your video file into the Video Clip field.
+Set Render Mode to Material Override and assign the plane's material.
+Play the Video on Detection:
+
+Check the Play on Awake box to start the video automatically when the marker is detected.
+Alternatively, create a script to control video playback when the marker is tracked (see below).
